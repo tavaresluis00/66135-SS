@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+           xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+           xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+		  http://java.sun.com/xml/ns/javaee/web-app_3_1.xsd"
+           version="3.1">
+<!--
+    <servlet>
+        <servlet-name>HelloWorld</servlet-name>
+        <servlet-class>test.HelloWorld</servlet-class>
+    </servlet> -->
+
+    <listener>
+        <listener-class>AuthenticatorListener</listener-class>
+    </listener>
+
+    <servlet>
+        <servlet-name>TestingServlet</servlet-name>
+        <servlet-class>TestingServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>TestingServlet</servlet-name>
+        <url-pattern>/TestingServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>AuthenticationServlet</servlet-name>
+        <servlet-class>AuthenticationServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>AuthenticationServlet</servlet-name>
+        <url-pattern>/AuthenticationServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CreateAccountServlet</servlet-name>
+        <servlet-class>CreateAccountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateAccountServlet</servlet-name>
+        <url-pattern>/CreateAccountServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>LogOutAccountServlet</servlet-name>
+        <servlet-class>LogOutAccountServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>LogOutAccountServlet</servlet-name>
+        <url-pattern>/LogOutAccountServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteAccountServlet</servlet-name>
+        <servlet-class>DeleteAccountServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DeleteAccountServlet</servlet-name>
+        <url-pattern>/DeleteAccountServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>FailedLogInServlet</servlet-name>
+        <servlet-class>FailedLogInServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>FailedLogInServlet</servlet-name>
+        <url-pattern>/FailedLogInServlet</url-pattern>
+    </servlet-mapping>
+</web-app>
+
